@@ -22,7 +22,7 @@ bot.on('ready', () => {
 });
 
 bot.on('message', (message) => {
-  if (!message.content.startsWith(prefix))
+  if (!message.channel.id == '1152626056960937984')
     return;
   
   const command = message.content.substring(prefix.length, message.content.length);
